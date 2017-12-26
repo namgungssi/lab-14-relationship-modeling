@@ -2,7 +2,7 @@
 
 
 
-process.env.PORT = 8080;
+process.env.PORT = 27017;
 process.env.MONGODB_URI = 'mongodb://localhost/test';
 
 
@@ -11,7 +11,7 @@ const server = require('../lib/_server.js');
 const Character = require('../models/character.js');
 
 
-let url = ('http://localhost:8080/api/characters');
+let url = ('http://localhost:27017/api/characters');
 let goodGuy = {name: 'tmnt'};
 let badGuy = {name: 'shredder'};
 
