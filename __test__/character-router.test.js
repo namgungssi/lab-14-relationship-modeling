@@ -2,12 +2,12 @@
 
 
 
-process.env.PORT = 8080;
+process.env.PORT = 6969;
 process.env.MONGODB_URI = 'mongodb://localhost/test';
 
 
 const request = require('superagent');
-const server = require('../lib/server.js');
+const server = require('../lib/_server.js');
 const Character = require('../models/character.js');
 
 
@@ -42,7 +42,7 @@ describe('character-router', () => {
 
     test('should return 400 if name missing', () => {
       return request.post(url)
-        .send(master)
+        .send(badGuy)
         .catch(res => {
           expect(res.status).toBe(400);
         });
