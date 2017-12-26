@@ -2,8 +2,8 @@
 
 
 
-require ('dotenv').config ();
-require ('./lib/_server').start (process.env.PORT);
+require('dotenv').config();
+require('./lib/server.js').start();
 
 
 //how do I save db in .gitignore?
