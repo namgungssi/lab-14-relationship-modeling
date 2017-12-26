@@ -24,8 +24,8 @@ describe('character-router', () => {
     server.start();
     return Character.remove({});
   });
-
   afterAll(server.stop);
+
 
 
   describe('POST routes', () => {
@@ -48,6 +48,7 @@ describe('character-router', () => {
         });
     });
   });
+
 
 
   describe('GET routes', () => {
