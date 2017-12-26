@@ -1,13 +1,7 @@
-![CF](https://camo.githubusercontent.com/70edab54bba80edb7493cad3135e9606781cbb6b/687474703a2f2f692e696d6775722e636f6d2f377635415363382e706e67) 14: Mongo/Express 2 Resource API
-===
+## TEST
+* npm test (jest)
 
-## Submission Instructions
-  * fork this repository & create a new branch for your work
-  * write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-susan`
-  * push to your repository
-  * submit a pull request to this repository
-  * submit a link to your PR in canvas
-  * write a question and observation on canvas
+
 
 ## Learning Objectives  
 * students will be able to create a 2 resource MongoDB and Express API
