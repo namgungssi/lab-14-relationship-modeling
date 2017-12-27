@@ -3,8 +3,8 @@
 
 
 const mongoose = require('mongoose');
-const bookCharacter = require('./character.js');
-const bookSchema = mongoose.Schema({
+const comicCharacter = require('./character.js');
+const comicSchema = mongoose.Schema({
   title: {type: String, required: true, unique: true},
   author: {type: String},
   characters: [{type: mongoose.Schema.Types.ObjectId, ref: 'characters'}],
@@ -12,11 +12,11 @@ const bookSchema = mongoose.Schema({
 
 
 
-bookSchema.pre('findOne', function(done){
+comicSchema.pre('findOne', function(done){
   this.populate('characters');
   done();
 });
 
 
 
-module.exports = mongoose.model('books', bookSchema);
+module.exports = mongoose.model('comics', comicSchema);
